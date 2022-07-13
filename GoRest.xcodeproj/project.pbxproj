@@ -28,6 +28,8 @@
 		2F9D9ADF287E693000CF8B3B /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9D9ADE287E693000CF8B3B /* Post.storyboard */; };
 		2F9D9AE3287EA48500CF8B3B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AE2287EA48500CF8B3B /* Post.swift */; };
 		2F9D9AE5287EA56A00CF8B3B /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AE4287EA56A00CF8B3B /* PostResponse.swift */; };
+		2F9D9AE8287EA8FE00CF8B3B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9D9AE7287EA8FE00CF8B3B /* PostTableViewCell.xib */; };
+		2F9D9AEA287EA90D00CF8B3B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AE9287EA90D00CF8B3B /* PostTableViewCell.swift */; };
 		4DB30CC56EEE8ECD220D0B49 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F23E81A827C65C8E19C9D9 /* PostListViewController.swift */; };
 		5507BC041340B35CEE332131 /* PostInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634AF88970D6C52EDD072FF4 /* PostInitializer.swift */; };
 		5CF7FAEF543CC2891023CCBB /* PostListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0B1236011F91DD6460E56 /* PostListInteractorInput.swift */; };
@@ -86,6 +88,8 @@
 		2F9D9ADE287E693000CF8B3B /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		2F9D9AE2287EA48500CF8B3B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2F9D9AE4287EA56A00CF8B3B /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		2F9D9AE7287EA8FE00CF8B3B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		2F9D9AE9287EA90D00CF8B3B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		384B429A01BEC4ED54E7B75C /* PostViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostViewTest.swift; sourceTree = "<group>"; };
 		3EB44FD512126F221E0C339B /* PostConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostConfiguratorTest.swift; sourceTree = "<group>"; };
 		44D77322035D0C6282C12B79 /* PostListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListRouter.swift; sourceTree = "<group>"; };
@@ -267,6 +271,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2F9D9AE6287EA8E600CF8B3B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F9D9AE9287EA90D00CF8B3B /* PostTableViewCell.swift */,
+				2F9D9AE7287EA8FE00CF8B3B /* PostTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		3C1F75763F17172B124A30F9 /* Application Logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +309,7 @@
 		73E3DA6AAD9E16AAF0AE1487 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F9D9AE6287EA8E600CF8B3B /* Cell */,
 				F6F23E81A827C65C8E19C9D9 /* PostListViewController.swift */,
 				BCA448980158C291EDBBD26F /* PostListViewInput.swift */,
 				831467C3421EB28D187E7157 /* PostListViewOutput.swift */,
@@ -549,6 +563,7 @@
 				2F0B4E3A287E16F90044A644 /* LaunchScreen.storyboard in Resources */,
 				2F9D9ADF287E693000CF8B3B /* Post.storyboard in Resources */,
 				2F0B4E37287E16F90044A644 /* Assets.xcassets in Resources */,
+				2F9D9AE8287EA8FE00CF8B3B /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +600,7 @@
 				5507BC041340B35CEE332131 /* PostInitializer.swift in Sources */,
 				F0CED468A2D056592989CE3C /* PostListInteractor.swift in Sources */,
 				5CF7FAEF543CC2891023CCBB /* PostListInteractorInput.swift in Sources */,
+				2F9D9AEA287EA90D00CF8B3B /* PostTableViewCell.swift in Sources */,
 				5CFB311DDC77DEEEE384A9BE /* PostListInteractorOutput.swift in Sources */,
 				D664D03AE8A802EF1297CB03 /* PostListModuleInput.swift in Sources */,
 				9617C24A945EEA3DD71DCF04 /* PostListPresenter.swift in Sources */,
