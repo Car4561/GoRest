@@ -11,9 +11,8 @@ extension UIStoryboard {
     
     enum Storyboard: String {
     
-        case login
-        case mainNavigation
-        
+        case post
+
         var filename: String {
             let firstLetter = rawValue.prefix(1)
             let camelCaseStoryboardName = firstLetter.uppercased() + rawValue.suffix(rawValue.count - 1)

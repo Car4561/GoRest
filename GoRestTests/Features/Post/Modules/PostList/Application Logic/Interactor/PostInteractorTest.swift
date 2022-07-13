@@ -27,6 +27,6 @@ final class PostInteractorTest: QuickSpec {
 
     // MARK: Mock Classes
 
-    private class MockPresenter: PostInteractorOutput {
+    private class MockPresenter: PostListInteractorOutput {
     }
 }

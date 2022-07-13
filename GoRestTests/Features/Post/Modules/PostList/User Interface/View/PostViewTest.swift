@@ -27,7 +27,7 @@ final class PostViewTest: QuickSpec {
 
     // MARK: Mock Classes
 
-    private class MockOutput: PostViewOutput {
+    private class MockOutput: PostListViewOutput {
 
         var viewIsReadyCount = 0
 

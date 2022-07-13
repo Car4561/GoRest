@@ -1,5 +1,5 @@
 //
-//  PostInitializer.swift
+//  PostListInitializer.swift
 //  GoRest
 //
 //  Created by Carlos Llerena on 12/07/2022.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-class PostModuleInitializer: NSObject {
+class PostListModuleInitializer: NSObject {
 
     // TODO: Connect with object on storyboard
-    @IBOutlet weak var postViewController: PostViewController!
+    @IBOutlet weak var postListViewController: PostListViewController!
 
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        let configurator = PostModuleConfigurator()
-        configurator.configureModuleForViewInput(postViewController)
+        let configurator = PostListModuleConfigurator()
+        configurator.configureModuleForViewInput(postListViewController)
     }
 }

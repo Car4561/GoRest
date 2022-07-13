@@ -1,5 +1,5 @@
 //
-//  PostViewController.swift
+//  PostListViewController.swift
 //  GoRest
 //
 //  Created by Carlos Llerena on 12/07/2022.
@@ -8,10 +8,9 @@
 
 import UIKit
 
-class PostViewController: UIViewController {
+class PostListViewController: UIViewController {
 
-    var output: PostViewOutput!
-
+    var output: PostListViewOutput!
 
     // MARK: Life cycle
 
@@ -27,12 +26,12 @@ class PostViewController: UIViewController {
 
 // MARK: PostViewInput Methods
 
-extension PostViewController: PostViewInput {
+extension PostListViewController: PostListViewInput {
 
     func setUpInitialState() {
     }
 
-    func moduleInput() -> PostModuleInput {
-        return output as! PostModuleInput
+    func moduleInput() -> PostListModuleInput {
+        return output as! PostListModuleInput
     }
 }

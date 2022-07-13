@@ -27,20 +27,20 @@ final class PostPresenterTest: QuickSpec {
 
     // MARK: Mock Classes
 
-    private class MockInteractor: PostInteractorInput {
+    private class MockInteractor: PostListInteractorInput {
     }
 
-    private class MockRouter: PostRouterInput {
+    private class MockRouter: PostListRouterInput {
     }
 
-    private class MockView: PostViewInput {
+    private class MockView: PostListViewInput {
 
         func setUpInitialState() {
         }
 
-        func moduleInput() -> PostModuleInput {
+        func moduleInput() -> PostListModuleInput {
 
-            return PostPresenter()
+            return PostListPresenter()
 	    }
     }
 }

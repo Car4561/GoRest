@@ -15,7 +15,7 @@ final class PostModuleConfiguratorTest: QuickSpec {
 
     override func spec() {
         var viewController: PostViewControllerMock!
-        var configurator: PostModuleConfigurator!
+        var configurator: PostListModuleConfigurator!
 
         beforeEach {
             viewController = PostViewControllerMock()
@@ -61,6 +61,6 @@ final class PostModuleConfiguratorTest: QuickSpec {
 
     // MARK: Mock Classes
 
-    private class PostViewControllerMock: PostViewController {
+    private class PostViewControllerMock: PostListViewController {
     }
 }
