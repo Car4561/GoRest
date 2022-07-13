@@ -37,7 +37,6 @@
 		2FBF60B5287EB12600591DD3 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60B4287EB12600591DD3 /* Host.swift */; };
 		2FBF60B8287EB22400591DD3 /* CommonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60B7287EB22400591DD3 /* CommonString.swift */; };
 		2FBF60BB287EB44000591DD3 /* PostStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60BA287EB44000591DD3 /* PostStrings.swift */; };
-		2FBF60BE287F4B6700591DD3 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 2FBF60BD287F4B6700591DD3 /* Nimble */; };
 		4DB30CC56EEE8ECD220D0B49 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F23E81A827C65C8E19C9D9 /* PostListViewController.swift */; };
 		5507BC041340B35CEE332131 /* PostInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634AF88970D6C52EDD072FF4 /* PostInitializer.swift */; };
 		5CF7FAEF543CC2891023CCBB /* PostListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0B1236011F91DD6460E56 /* PostListInteractorInput.swift */; };
@@ -125,7 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9D9ACD287E4CEB00CF8B3B /* GoRestUI in Frameworks */,
-				2FBF60BE287F4B6700591DD3 /* Nimble in Frameworks */,
 				2F9D9ACB287E4CE800CF8B3B /* GoRestNetworking in Frameworks */,
 				2F9D9ADB287E5B6300CF8B3B /* Lottie in Frameworks */,
 			);
@@ -547,7 +545,6 @@
 				2F9D9ACA287E4CE800CF8B3B /* GoRestNetworking */,
 				2F9D9ACC287E4CEB00CF8B3B /* GoRestUI */,
 				2F9D9ADA287E5B6300CF8B3B /* Lottie */,
-				2FBF60BD287F4B6700591DD3 /* Nimble */,
 			);
 			productName = GoRest;
 			productReference = 2F0B4E2A287E16F80044A644 /* GoRest.app */;
@@ -623,7 +620,6 @@
 			mainGroup = 2F0B4E21287E16F70044A644;
 			packageReferences = (
 				2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				2FBF60BC287F4B6700591DD3 /* XCRemoteSwiftPackageReference "Nimble" */,
 			);
 			productRefGroup = 2F0B4E2B287E16F80044A644 /* Products */;
 			projectDirPath = "";
@@ -1046,14 +1042,6 @@
 				version = 3.3.0;
 			};
 		};
-		2FBF60BC287F4B6700591DD3 /* XCRemoteSwiftPackageReference "Nimble" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Quick/Nimble.git";
-			requirement = {
-				kind = exactVersion;
-				version = 9.2.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1069,11 +1057,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
-		};
-		2FBF60BD287F4B6700591DD3 /* Nimble */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2FBF60BC287F4B6700591DD3 /* XCRemoteSwiftPackageReference "Nimble" */;
-			productName = Nimble;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
