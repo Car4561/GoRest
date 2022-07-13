@@ -18,7 +18,9 @@ class PostListViewController: UIViewController {
     let scrollingThreshold = 3
     var currentPage = 0
     
-    var postList: [Post] = [] {
+    var postList: [Post] = []
+    
+    var filteredPostList: [Post] = [] {
         didSet {
             postsTableView.reloadData()
         }
@@ -37,7 +39,6 @@ class PostListViewController: UIViewController {
     lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.placeholder = PostStrings.search
-        searchController.searchBar.delegate = self
         searchController.searchResultsUpdater = self
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchBar.sizeToFit()
@@ -58,6 +59,13 @@ class PostListViewController: UIViewController {
     
     func configureMainNavigation() {
         title = PostStrings.title
+        navigationItem.searchController = searchController
+    }
+    
+    func filterContent(searchText: String){
+        filteredPostList = searchText.isEmpty ? postList : postList.filter { post in
+            return post.title.lowercased().contains(searchText)
+        }
     }
 }
 
@@ -66,12 +74,12 @@ class PostListViewController: UIViewController {
 extension PostListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        postList.count
+        filteredPostList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as PostTableViewCell
-        let post = postList[indexPath.row]
+        let post = filteredPostList[indexPath.row]
         cell.configure(with: post)
         return cell
     }
@@ -83,10 +91,11 @@ extension PostListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension PostListViewController: UISearchBarDelegate, UISearchResultsUpdating{
-    
+extension PostListViewController: UISearchResultsUpdating{
+
     func updateSearchResults(for searchController: UISearchController) {
-        
+        guard let searchText = searchController.searchBar.text else { return }
+        filterContent(searchText: searchText.lowercased())
     }
 }
 
@@ -104,12 +113,13 @@ extension PostListViewController: PostListViewInput, GRActivityIndicatorPresenta
     func setPostList(_ postList: [Post]) {
         currentPage = 1
         self.postList = postList
-        navigationItem.searchController = searchController
+        self.filteredPostList = self.postList
     }
     
     func appendToPostList(_ postList: [Post]) {
         currentPage += 1
         self.postList.append(contentsOf: postList)
+        self.filteredPostList = self.postList
     }
     
     func showActivityIndicatorView() {

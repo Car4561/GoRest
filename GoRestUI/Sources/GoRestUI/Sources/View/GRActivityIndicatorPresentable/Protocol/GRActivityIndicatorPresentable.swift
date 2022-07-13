@@ -29,7 +29,7 @@ public extension GRActivityIndicatorPresentable where Self: UIViewController {
         if let window = keyWindow {
             window.addSubview(grActivityIndicatorView)
         } else {
-            self.view.addSubview(grActivityIndicatorView)
+            self.navigationController?.view.addSubview(grActivityIndicatorView)
         }
     }
     
