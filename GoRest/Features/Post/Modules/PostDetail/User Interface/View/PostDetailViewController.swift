@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoRestUI
 
 class PostDetailViewController: UIViewController {
 
@@ -15,12 +16,13 @@ class PostDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
             titleLabel.numberOfLines = 0
+            titleLabel.textColor = GRColors.labelPrimary
         }
     }
     
-    @IBOutlet weak var bodyTextView: UITextView! {
+    @IBOutlet weak var bodyLabel: UILabel! {
         didSet {
-            bodyTextView.textAlignment = .justified
+            bodyLabel.textAlignment = .justified
         }
     }
     // MARK: Life cycle
@@ -38,11 +40,16 @@ class PostDetailViewController: UIViewController {
 // MARK: PostDetailViewInput Methods
 
 extension PostDetailViewController: PostDetailViewInput {
-
+    
     func setUpInitialState() {
     }
 
     func moduleInput() -> PostDetailModuleInput {
         return output as! PostDetailModuleInput
+    }
+    
+    func setPost(title: String, body: String) {
+        titleLabel.text = title
+        bodyLabel.text = body
     }
 }

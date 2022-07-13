@@ -18,6 +18,7 @@ class PostListModuleConfigurator {
     private func configure(viewController: PostListViewController) {
 
         let router = PostListRouter()
+        router.viewController = viewController
 
         let presenter = PostListPresenter()
         presenter.view = viewController

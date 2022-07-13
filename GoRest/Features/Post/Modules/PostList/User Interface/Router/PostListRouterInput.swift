@@ -7,4 +7,6 @@
 //
 
 protocol PostListRouterInput {
+    
+    func routeToPostDetail(title: String, body: String)
 }

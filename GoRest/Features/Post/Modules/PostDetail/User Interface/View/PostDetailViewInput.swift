@@ -10,4 +10,5 @@ protocol PostDetailViewInput: AnyObject {
 
     func setUpInitialState()
     func moduleInput() -> PostDetailModuleInput
+    func setPost(title: String, body: String)
 }

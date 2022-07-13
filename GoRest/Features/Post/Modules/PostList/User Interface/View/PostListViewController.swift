@@ -84,6 +84,11 @@ extension PostListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = filteredPostList[indexPath.row]
+        output.didTapPost(post: post)
+    }
+    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row == (currentPage * pageSize) - scrollingThreshold {
             output.retrieveNewPage()

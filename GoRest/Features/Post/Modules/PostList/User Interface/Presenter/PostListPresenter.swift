@@ -39,6 +39,10 @@ extension PostListPresenter: PostListViewOutput {
         
         interactor.getPostList(page: nextPage)
     }
+    
+    func didTapPost(post: Post) {
+        router.routeToPostDetail(title: post.title, body: post.body)
+    }
 }
 
 

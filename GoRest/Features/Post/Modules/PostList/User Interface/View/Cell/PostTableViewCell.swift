@@ -25,8 +25,7 @@ class PostTableViewCell: UITableViewCell {
     
     @IBOutlet weak var bodyLabel: UILabel! {
         didSet {
-            bodyLabel.numberOfLines = 0
-            bodyLabel.textColor = GRColors.labelPrimary
+            bodyLabel.numberOfLines = 2
         }
     }
     

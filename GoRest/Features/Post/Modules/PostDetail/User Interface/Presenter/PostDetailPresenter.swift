@@ -11,6 +11,9 @@ class PostDetailPresenter {
     weak var view: PostDetailViewInput!
     var interactor: PostDetailInteractorInput!
     var router: PostDetailRouterInput!
+    
+    var title: String!
+    var body: String!
 }
 
 
@@ -18,7 +21,9 @@ class PostDetailPresenter {
 
 extension PostDetailPresenter: PostDetailModuleInput {
 
-    func initializeModule() {
+    func initializeModule(title: String, body: String) {
+        self.title = title
+        self.body = body
     }
 }
 
@@ -28,6 +33,7 @@ extension PostDetailPresenter: PostDetailModuleInput {
 extension PostDetailPresenter: PostDetailViewOutput {
 
     func viewIsReady() {
+        view.setPost(title: title, body: body)
     }
 }
 
