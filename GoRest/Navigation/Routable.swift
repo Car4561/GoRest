@@ -27,25 +27,7 @@ protocol Routable {
 }
 
 extension Routable {
-    
-    /**
-     Protocol used to push a ViewController to a new ViewController in a different StoryBoard without adding a NavigationController.
-     
-     ## Important Notes ##
-     1. The Origin ViewController must be embedded in a NavigationController
-     
-     ### Usage Example: ###
-     ````
-     
-     extension ModuleRouter: Routable {
-     
-        func navigateToViewController(withIdentifer identifier: String, storyBoard: UIStoryboard.Storyboard) {
-            pushViewController(withIdentifer: identifier, in: storyBoard, from: viewController)
-        }
-     }
-     
-     ````
-     */
+
     func pushViewController<T: UIViewController>(withIdentifer identifier: String,
                                                  type: T.Type,
                                                  in storyBoard: UIStoryboard.Storyboard,
