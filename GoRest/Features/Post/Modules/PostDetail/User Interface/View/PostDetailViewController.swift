@@ -12,7 +12,17 @@ class PostDetailViewController: UIViewController {
 
     var output: PostDetailViewOutput!
 
-
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            titleLabel.numberOfLines = 0
+        }
+    }
+    
+    @IBOutlet weak var bodyTextView: UITextView! {
+        didSet {
+            bodyTextView.textAlignment = .justified
+        }
+    }
     // MARK: Life cycle
 
     override func viewDidLoad() {
