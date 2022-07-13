@@ -5,6 +5,9 @@
       location = "group:GoRestNetworking">
    </FileRef>
    <FileRef
+      location = "group:GoRestUI">
+   </FileRef>
+   <FileRef
       location = "group:GoRest.xcodeproj">
    </FileRef>
 </Workspace>
