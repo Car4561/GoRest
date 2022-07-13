@@ -171,8 +171,7 @@
 		2F0B4E2C287E16F80044A644 /* GoRest */ = {
 			isa = PBXGroup;
 			children = (
-				2F9D9AD6287E50E800CF8B3B /* Navigation */,
-				2F9D9AC6287E4CBA00CF8B3B /* Extensions */,
+				2F9D9ADC287E677F00CF8B3B /* Common */,
 				2F0B4E2D287E16F80044A644 /* AppDelegate.swift */,
 				2F0B4E2F287E16F80044A644 /* SceneDelegate.swift */,
 				2F0B4E36287E16F90044A644 /* Assets.xcassets */,
@@ -225,6 +224,15 @@
 				2F9D9AD7287E50F500CF8B3B /* Routable.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2F9D9ADC287E677F00CF8B3B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F9D9AD6287E50E800CF8B3B /* Navigation */,
+				2F9D9AC6287E4CBA00CF8B3B /* Extensions */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		3C1F75763F17172B124A30F9 /* Application Logic */ = {
