@@ -30,6 +30,13 @@
 		2F9D9AE5287EA56A00CF8B3B /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AE4287EA56A00CF8B3B /* PostResponse.swift */; };
 		2F9D9AE8287EA8FE00CF8B3B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9D9AE7287EA8FE00CF8B3B /* PostTableViewCell.xib */; };
 		2F9D9AEA287EA90D00CF8B3B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AE9287EA90D00CF8B3B /* PostTableViewCell.swift */; };
+		2FBF60AA287EAF9F00591DD3 /* PostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60A9287EAF9F00591DD3 /* PostClient.swift */; };
+		2FBF60AC287EAFA600591DD3 /* PostResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60AB287EAFA600591DD3 /* PostResource.swift */; };
+		2FBF60B0287EB06800591DD3 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60AF287EB06800591DD3 /* ErrorResponse.swift */; };
+		2FBF60B3287EB10700591DD3 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60B2287EB10700591DD3 /* NetworkingService.swift */; };
+		2FBF60B5287EB12600591DD3 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60B4287EB12600591DD3 /* Host.swift */; };
+		2FBF60B8287EB22400591DD3 /* CommonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60B7287EB22400591DD3 /* CommonString.swift */; };
+		2FBF60BB287EB44000591DD3 /* PostStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60BA287EB44000591DD3 /* PostStrings.swift */; };
 		4DB30CC56EEE8ECD220D0B49 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F23E81A827C65C8E19C9D9 /* PostListViewController.swift */; };
 		5507BC041340B35CEE332131 /* PostInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634AF88970D6C52EDD072FF4 /* PostInitializer.swift */; };
 		5CF7FAEF543CC2891023CCBB /* PostListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0B1236011F91DD6460E56 /* PostListInteractorInput.swift */; };
@@ -90,6 +97,13 @@
 		2F9D9AE4287EA56A00CF8B3B /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		2F9D9AE7287EA8FE00CF8B3B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		2F9D9AE9287EA90D00CF8B3B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		2FBF60A9287EAF9F00591DD3 /* PostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostClient.swift; sourceTree = "<group>"; };
+		2FBF60AB287EAFA600591DD3 /* PostResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResource.swift; sourceTree = "<group>"; };
+		2FBF60AF287EB06800591DD3 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		2FBF60B2287EB10700591DD3 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		2FBF60B4287EB12600591DD3 /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		2FBF60B7287EB22400591DD3 /* CommonString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonString.swift; sourceTree = "<group>"; };
+		2FBF60BA287EB44000591DD3 /* PostStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStrings.swift; sourceTree = "<group>"; };
 		384B429A01BEC4ED54E7B75C /* PostViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostViewTest.swift; sourceTree = "<group>"; };
 		3EB44FD512126F221E0C339B /* PostConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostConfiguratorTest.swift; sourceTree = "<group>"; };
 		44D77322035D0C6282C12B79 /* PostListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListRouter.swift; sourceTree = "<group>"; };
@@ -239,6 +253,9 @@
 		2F9D9ADC287E677F00CF8B3B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2FBF60B6287EB21500591DD3 /* Strings */,
+				2FBF60B1287EB0F900591DD3 /* Services */,
+				2FBF60AD287EB05300591DD3 /* Entity */,
 				2F9D9AD6287E50E800CF8B3B /* Navigation */,
 				2F9D9AC6287E4CBA00CF8B3B /* Extensions */,
 				2F9D9ADD287E691900CF8B3B /* Storyboard */,
@@ -278,6 +295,65 @@
 				2F9D9AE7287EA8FE00CF8B3B /* PostTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		2FBF60A7287EAF8E00591DD3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2FBF60B9287EB43300591DD3 /* Strings */,
+				2FBF60A8287EAF9300591DD3 /* Entity */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2FBF60A8287EAF9300591DD3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2FBF60A9287EAF9F00591DD3 /* PostClient.swift */,
+				2FBF60AB287EAFA600591DD3 /* PostResource.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2FBF60AD287EB05300591DD3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2FBF60AE287EB05F00591DD3 /* Models */,
+				2FBF60B4287EB12600591DD3 /* Host.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2FBF60AE287EB05F00591DD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FBF60AF287EB06800591DD3 /* ErrorResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2FBF60B1287EB0F900591DD3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2FBF60B2287EB10700591DD3 /* NetworkingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2FBF60B6287EB21500591DD3 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				2FBF60B7287EB22400591DD3 /* CommonString.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		2FBF60B9287EB43300591DD3 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				2FBF60BA287EB44000591DD3 /* PostStrings.swift */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		3C1F75763F17172B124A30F9 /* Application Logic */ = {
@@ -426,6 +502,7 @@
 		ED7FF8EEC4946A1B42559C8D /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				2FBF60A7287EAF8E00591DD3 /* Common */,
 				63628AC591CC1378CB0DAB62 /* Modules */,
 			);
 			path = Post;
@@ -593,11 +670,14 @@
 				2F9D9AC8287E4CCE00CF8B3B /* JSONUtility.swift in Sources */,
 				2F9D9AD3287E50A500CF8B3B /* UIStoryboard+Storyboards.swift in Sources */,
 				2F9D9AD1287E4FDA00CF8B3B /* UIStoryboard+StoryboardIdentifiable.swift in Sources */,
+				2FBF60B0287EB06800591DD3 /* ErrorResponse.swift in Sources */,
 				2F0B4E30287E16F80044A644 /* SceneDelegate.swift in Sources */,
 				2F9D9ACF287E4E7500CF8B3B /* StoryboardIdentifiable.swift in Sources */,
+				2FBF60BB287EB44000591DD3 /* PostStrings.swift in Sources */,
 				2F9D9AD8287E50F500CF8B3B /* Routable.swift in Sources */,
 				285EB7BE3B16EB35A54A7D75 /* PostListConfigurator.swift in Sources */,
 				5507BC041340B35CEE332131 /* PostInitializer.swift in Sources */,
+				2FBF60B3287EB10700591DD3 /* NetworkingService.swift in Sources */,
 				F0CED468A2D056592989CE3C /* PostListInteractor.swift in Sources */,
 				5CF7FAEF543CC2891023CCBB /* PostListInteractorInput.swift in Sources */,
 				2F9D9AEA287EA90D00CF8B3B /* PostTableViewCell.swift in Sources */,
@@ -607,9 +687,13 @@
 				B02FA44A5C2AA52716C22982 /* PostListRouter.swift in Sources */,
 				03B95C15C8F9EA1C4A70747D /* PostListRouterInput.swift in Sources */,
 				4DB30CC56EEE8ECD220D0B49 /* PostListViewController.swift in Sources */,
+				2FBF60B8287EB22400591DD3 /* CommonString.swift in Sources */,
+				2FBF60AC287EAFA600591DD3 /* PostResource.swift in Sources */,
 				875238FB2D7F00FAD9D14917 /* PostListViewInput.swift in Sources */,
 				13A5024D2D216438068DA767 /* PostListViewOutput.swift in Sources */,
+				2FBF60B5287EB12600591DD3 /* Host.swift in Sources */,
 				2F9D9AE3287EA48500CF8B3B /* Post.swift in Sources */,
+				2FBF60AA287EAF9F00591DD3 /* PostClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

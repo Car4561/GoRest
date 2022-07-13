@@ -35,8 +35,12 @@ class PostListViewController: UIViewController {
         super.viewDidLoad()
 
 	    // TODO: View set up code goes here. Please remove this comment.
-
+        configureMainNavigation()
         output.viewIsReady()
+    }
+    
+    func configureMainNavigation() {
+       title = PostStrings.title
     }
 }
 

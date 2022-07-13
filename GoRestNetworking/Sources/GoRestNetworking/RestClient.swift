@@ -21,15 +21,21 @@ open class RestClient: NSObject{
     }
     
     public func request<T: Decodable, U :Decodable>(resource: Resource,
+                                                    querys: [URLQueryItem] = [],
                                                     parameters: JSON? = nil,
                                                     type: T.Type,
                                                     errorType: U.Type) -> AnyPublisher<T, NetworkingError> {
         let fullURLString = baseURL + resource.resource.route
         
-        guard let url = URL(string: fullURLString) else {
+        guard let urlInit = URL(string: fullURLString), var urlComponents = URLComponents(url: urlInit, resolvingAgainstBaseURL: false) else {
             return Fail(error: NetworkingError.invalidRequestError("Invalid URL: \(fullURLString)")).eraseToAnyPublisher()
         }
         
+        urlComponents.queryItems = querys
+        
+        guard let url = urlComponents.url else {
+            return Fail(error: NetworkingError.invalidRequestError("Invalid URL: \(fullURLString)")).eraseToAnyPublisher()
+        }
         var urlRequest = URLRequest(url: url)
         
         urlRequest.httpMethod = resource.resource.method.rawValue

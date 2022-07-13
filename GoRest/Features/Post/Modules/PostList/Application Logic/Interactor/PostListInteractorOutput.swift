@@ -7,4 +7,6 @@
 //
 
 protocol PostListInteractorOutput: AnyObject {
+    func didFetchPostList(_ postList: [Post])
+    func didFailFetchingPostList(title: String, message: String)
 }

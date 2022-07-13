@@ -28,6 +28,8 @@ extension PostListPresenter: PostListModuleInput {
 extension PostListPresenter: PostListViewOutput {
 
     func viewIsReady() {
+        view.showActivityIndicatorView()
+        interactor.getPostList()
     }
 }
 
@@ -35,4 +37,13 @@ extension PostListPresenter: PostListViewOutput {
 // MARK: PostInteractorOutput methods
 
 extension PostListPresenter: PostListInteractorOutput {
+    
+    func didFetchPostList(_ postList: [Post]) {
+        view.hideActivityIndicatorView()
+        view.setPostList(postList)
+    }
+    
+    func didFailFetchingPostList(title: String, message: String) {
+        view.hideActivityIndicatorView()
+    }
 }

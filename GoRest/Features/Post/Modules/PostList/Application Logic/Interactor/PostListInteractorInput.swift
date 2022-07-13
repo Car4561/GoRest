@@ -7,4 +7,5 @@
 //
 
 protocol PostListInteractorInput {
+    func getPostList()
 }

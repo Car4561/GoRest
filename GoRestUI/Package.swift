@@ -24,7 +24,7 @@ let package = Package(
             name: "GoRestUI",
             dependencies: [.product(name: "Lottie", package: "lottie-ios")],
             resources: [
-                .process("Resources/GRLogo.json")
+                .process("Resources/GRLoading.json")
             ]),
         .testTarget(
             name: "GoRestUITests",

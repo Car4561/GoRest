@@ -10,6 +10,6 @@ public struct GRResource {
     // MARK: - Lottie
     
     struct Lottie {
-        static let grResource = "grResource"
+        static let grResource = "GRLoading"
     }
 }
