@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B95C15C8F9EA1C4A70747D /* PostRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB36C9A2A012FA892B7C8B /* PostRouterInput.swift */; };
+		13A5024D2D216438068DA767 /* PostViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831467C3421EB28D187E7157 /* PostViewOutput.swift */; };
+		285EB7BE3B16EB35A54A7D75 /* PostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3A9E0C84DC26A0BB62F155 /* PostConfigurator.swift */; };
 		2F0B4E2E287E16F80044A644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E2D287E16F80044A644 /* AppDelegate.swift */; };
 		2F0B4E30287E16F80044A644 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E2F287E16F80044A644 /* SceneDelegate.swift */; };
 		2F0B4E37287E16F90044A644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B4E36287E16F90044A644 /* Assets.xcassets */; };
@@ -22,6 +25,20 @@
 		2F9D9AD3287E50A500CF8B3B /* UIStoryboard+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AD2287E50A500CF8B3B /* UIStoryboard+Storyboards.swift */; };
 		2F9D9AD8287E50F500CF8B3B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AD7287E50F500CF8B3B /* Routable.swift */; };
 		2F9D9ADB287E5B6300CF8B3B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9D9ADA287E5B6300CF8B3B /* Lottie */; };
+		4DB30CC56EEE8ECD220D0B49 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F23E81A827C65C8E19C9D9 /* PostViewController.swift */; };
+		5507BC041340B35CEE332131 /* PostInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634AF88970D6C52EDD072FF4 /* PostInitializer.swift */; };
+		5CF7FAEF543CC2891023CCBB /* PostInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0B1236011F91DD6460E56 /* PostInteractorInput.swift */; };
+		5CFB311DDC77DEEEE384A9BE /* PostInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A237DA2EB5933DDF3FB722 /* PostInteractorOutput.swift */; };
+		7783E616602D840BEE8ADEBB /* PostRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267FF3BBA12B43F520165CD4 /* PostRouterTest.swift */; };
+		7937F91DE53AD894BD757029 /* PostConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB44FD512126F221E0C339B /* PostConfiguratorTest.swift */; };
+		875238FB2D7F00FAD9D14917 /* PostViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA448980158C291EDBBD26F /* PostViewInput.swift */; };
+		9617C24A945EEA3DD71DCF04 /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A0D98FAE8F21531C2A1F5 /* PostPresenter.swift */; };
+		9D21DF61CA0EF30DB648D87A /* PostInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE94FEBBE2A87B4FA577405 /* PostInteractorTest.swift */; };
+		B02FA44A5C2AA52716C22982 /* PostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D77322035D0C6282C12B79 /* PostRouter.swift */; };
+		D664D03AE8A802EF1297CB03 /* PostModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611938C0C2BA74B888672D23 /* PostModuleInput.swift */; };
+		DD378248C852E3163D2C3E06 /* PostViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B429A01BEC4ED54E7B75C /* PostViewTest.swift */; };
+		E1C53A38C94784902948B538 /* PostPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A4EC881C65AD183F04C77 /* PostPresenterTest.swift */; };
+		F0CED468A2D056592989CE3C /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9442F0BAAB80840676E77 /* PostInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +59,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CE94FEBBE2A87B4FA577405 /* PostInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostInteractorTest.swift; sourceTree = "<group>"; };
+		20B0B1236011F91DD6460E56 /* PostInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostInteractorInput.swift; sourceTree = "<group>"; };
+		267FF3BBA12B43F520165CD4 /* PostRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostRouterTest.swift; sourceTree = "<group>"; };
+		2C6A0D98FAE8F21531C2A1F5 /* PostPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		2D9A4EC881C65AD183F04C77 /* PostPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostPresenterTest.swift; sourceTree = "<group>"; };
 		2F0B4E2A287E16F80044A644 /* GoRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0B4E2D287E16F80044A644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F0B4E2F287E16F80044A644 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +80,18 @@
 		2F9D9AD0287E4FDA00CF8B3B /* UIStoryboard+StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+StoryboardIdentifiable.swift"; sourceTree = "<group>"; };
 		2F9D9AD2287E50A500CF8B3B /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
 		2F9D9AD7287E50F500CF8B3B /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		384B429A01BEC4ED54E7B75C /* PostViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostViewTest.swift; sourceTree = "<group>"; };
+		3EB44FD512126F221E0C339B /* PostConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostConfiguratorTest.swift; sourceTree = "<group>"; };
+		44D77322035D0C6282C12B79 /* PostRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostRouter.swift; sourceTree = "<group>"; };
+		52CB36C9A2A012FA892B7C8B /* PostRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostRouterInput.swift; sourceTree = "<group>"; };
+		611938C0C2BA74B888672D23 /* PostModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostModuleInput.swift; sourceTree = "<group>"; };
+		634AF88970D6C52EDD072FF4 /* PostInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostInitializer.swift; sourceTree = "<group>"; };
+		70B9442F0BAAB80840676E77 /* PostInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
+		831467C3421EB28D187E7157 /* PostViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostViewOutput.swift; sourceTree = "<group>"; };
+		BCA448980158C291EDBBD26F /* PostViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostViewInput.swift; sourceTree = "<group>"; };
+		D8A237DA2EB5933DDF3FB722 /* PostInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostInteractorOutput.swift; sourceTree = "<group>"; };
+		F6F23E81A827C65C8E19C9D9 /* PostViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		FB3A9E0C84DC26A0BB62F155 /* PostConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +122,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F8ED90058267F2FD1E64AA8 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				90F712D6EB44E32632A851BD /* Modules */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		2285BBA717ED54C866657508 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				3EB44FD512126F221E0C339B /* PostConfiguratorTest.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		25F7D7EBB8507EDCD5344B68 /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				853810DB36D643EEF5D18A58 /* Application Logic */,
+				BF151201679B1B6E93B679B5 /* User Interface */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
 		2F0B4E21287E16F70044A644 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +178,7 @@
 				2F0B4E36287E16F90044A644 /* Assets.xcassets */,
 				2F0B4E38287E16F90044A644 /* LaunchScreen.storyboard */,
 				2F0B4E3B287E16F90044A644 /* Info.plist */,
+				FE0631523C0081A13677F078 /* Features */,
 			);
 			path = GoRest;
 			sourceTree = "<group>";
@@ -127,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				2F0B4E44287E16F90044A644 /* GoRestTests.swift */,
+				C1C444FE91CE2E8204C8FCD0 /* Features */,
 			);
 			path = GoRestTests;
 			sourceTree = "<group>";
@@ -164,6 +225,172 @@
 				2F9D9AD7287E50F500CF8B3B /* Routable.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		3C1F75763F17172B124A30F9 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				83445F30A74A7100191DA4F9 /* Configurator */,
+				BBDE341F0E480BB2B14B2745 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		452C9455CC48E688730B1D23 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				267FF3BBA12B43F520165CD4 /* PostRouterTest.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		63628AC591CC1378CB0DAB62 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D7D63DD94FCF741A63602C51 /* PostList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		73E3DA6AAD9E16AAF0AE1487 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6F23E81A827C65C8E19C9D9 /* PostViewController.swift */,
+				BCA448980158C291EDBBD26F /* PostViewInput.swift */,
+				831467C3421EB28D187E7157 /* PostViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83445F30A74A7100191DA4F9 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FB3A9E0C84DC26A0BB62F155 /* PostConfigurator.swift */,
+				634AF88970D6C52EDD072FF4 /* PostInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		853810DB36D643EEF5D18A58 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				2285BBA717ED54C866657508 /* Configurator */,
+				D8531B7A495FAAB4646E0126 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		90F712D6EB44E32632A851BD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				25F7D7EBB8507EDCD5344B68 /* PostList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		90FEE4973D50D1CF800EDABA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2D9A4EC881C65AD183F04C77 /* PostPresenterTest.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AC55B328E895EAEB2D655E41 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				611938C0C2BA74B888672D23 /* PostModuleInput.swift */,
+				2C6A0D98FAE8F21531C2A1F5 /* PostPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BBDE341F0E480BB2B14B2745 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				70B9442F0BAAB80840676E77 /* PostInteractor.swift */,
+				20B0B1236011F91DD6460E56 /* PostInteractorInput.swift */,
+				D8A237DA2EB5933DDF3FB722 /* PostInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BF151201679B1B6E93B679B5 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				452C9455CC48E688730B1D23 /* Router */,
+				90FEE4973D50D1CF800EDABA /* Presenter */,
+				E71BF52638F88C5489FCADDF /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		C1C444FE91CE2E8204C8FCD0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1F8ED90058267F2FD1E64AA8 /* Post */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D7D63DD94FCF741A63602C51 /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F75763F17172B124A30F9 /* Application Logic */,
+				DB5CA0C05682BA8531CEC99E /* User Interface */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		D8531B7A495FAAB4646E0126 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1CE94FEBBE2A87B4FA577405 /* PostInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DB5CA0C05682BA8531CEC99E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AC55B328E895EAEB2D655E41 /* Presenter */,
+				EF84A9620B4CC7F7972F7A67 /* Router */,
+				73E3DA6AAD9E16AAF0AE1487 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E71BF52638F88C5489FCADDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				384B429A01BEC4ED54E7B75C /* PostViewTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED7FF8EEC4946A1B42559C8D /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				63628AC591CC1378CB0DAB62 /* Modules */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		EF84A9620B4CC7F7972F7A67 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				44D77322035D0C6282C12B79 /* PostRouter.swift */,
+				52CB36C9A2A012FA892B7C8B /* PostRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FE0631523C0081A13677F078 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ED7FF8EEC4946A1B42559C8D /* Post */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +538,18 @@
 				2F0B4E30287E16F80044A644 /* SceneDelegate.swift in Sources */,
 				2F9D9ACF287E4E7500CF8B3B /* StoryboardIdentifiable.swift in Sources */,
 				2F9D9AD8287E50F500CF8B3B /* Routable.swift in Sources */,
+				285EB7BE3B16EB35A54A7D75 /* PostConfigurator.swift in Sources */,
+				5507BC041340B35CEE332131 /* PostInitializer.swift in Sources */,
+				F0CED468A2D056592989CE3C /* PostInteractor.swift in Sources */,
+				5CF7FAEF543CC2891023CCBB /* PostInteractorInput.swift in Sources */,
+				5CFB311DDC77DEEEE384A9BE /* PostInteractorOutput.swift in Sources */,
+				D664D03AE8A802EF1297CB03 /* PostModuleInput.swift in Sources */,
+				9617C24A945EEA3DD71DCF04 /* PostPresenter.swift in Sources */,
+				B02FA44A5C2AA52716C22982 /* PostRouter.swift in Sources */,
+				03B95C15C8F9EA1C4A70747D /* PostRouterInput.swift in Sources */,
+				4DB30CC56EEE8ECD220D0B49 /* PostViewController.swift in Sources */,
+				875238FB2D7F00FAD9D14917 /* PostViewInput.swift in Sources */,
+				13A5024D2D216438068DA767 /* PostViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +567,11 @@
 			files = (
 				2F0B4E51287E16F90044A644 /* GoRestUITestsLaunchTests.swift in Sources */,
 				2F0B4E4F287E16F90044A644 /* GoRestUITests.swift in Sources */,
+				7937F91DE53AD894BD757029 /* PostConfiguratorTest.swift in Sources */,
+				9D21DF61CA0EF30DB648D87A /* PostInteractorTest.swift in Sources */,
+				7783E616602D840BEE8ADEBB /* PostRouterTest.swift in Sources */,
+				E1C53A38C94784902948B538 /* PostPresenterTest.swift in Sources */,
+				DD378248C852E3163D2C3E06 /* PostViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
