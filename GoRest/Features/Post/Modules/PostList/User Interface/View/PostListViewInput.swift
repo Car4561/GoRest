@@ -10,4 +10,6 @@ protocol PostListViewInput: AnyObject {
 
     func setUpInitialState()
     func moduleInput() -> PostListModuleInput
+    func showActivityIndicatorView()
+    func hideActivityIndicatorView()
 }

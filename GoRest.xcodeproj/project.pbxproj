@@ -26,6 +26,8 @@
 		2F9D9AD8287E50F500CF8B3B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AD7287E50F500CF8B3B /* Routable.swift */; };
 		2F9D9ADB287E5B6300CF8B3B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9D9ADA287E5B6300CF8B3B /* Lottie */; };
 		2F9D9ADF287E693000CF8B3B /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9D9ADE287E693000CF8B3B /* Post.storyboard */; };
+		2F9D9AE3287EA48500CF8B3B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AE2287EA48500CF8B3B /* Post.swift */; };
+		2F9D9AE5287EA56A00CF8B3B /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AE4287EA56A00CF8B3B /* PostResponse.swift */; };
 		4DB30CC56EEE8ECD220D0B49 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F23E81A827C65C8E19C9D9 /* PostListViewController.swift */; };
 		5507BC041340B35CEE332131 /* PostInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634AF88970D6C52EDD072FF4 /* PostInitializer.swift */; };
 		5CF7FAEF543CC2891023CCBB /* PostListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0B1236011F91DD6460E56 /* PostListInteractorInput.swift */; };
@@ -82,6 +84,8 @@
 		2F9D9AD2287E50A500CF8B3B /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
 		2F9D9AD7287E50F500CF8B3B /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		2F9D9ADE287E693000CF8B3B /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		2F9D9AE2287EA48500CF8B3B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2F9D9AE4287EA56A00CF8B3B /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		384B429A01BEC4ED54E7B75C /* PostViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostViewTest.swift; sourceTree = "<group>"; };
 		3EB44FD512126F221E0C339B /* PostConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostConfiguratorTest.swift; sourceTree = "<group>"; };
 		44D77322035D0C6282C12B79 /* PostListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListRouter.swift; sourceTree = "<group>"; };
@@ -246,9 +250,27 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		2F9D9AE0287EA45700CF8B3B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2F9D9AE1287EA45F00CF8B3B /* Model */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2F9D9AE1287EA45F00CF8B3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F9D9AE2287EA48500CF8B3B /* Post.swift */,
+				2F9D9AE4287EA56A00CF8B3B /* PostResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3C1F75763F17172B124A30F9 /* Application Logic */ = {
 			isa = PBXGroup;
 			children = (
+				2F9D9AE0287EA45700CF8B3B /* Entity */,
 				83445F30A74A7100191DA4F9 /* Configurator */,
 				BBDE341F0E480BB2B14B2745 /* Interactor */,
 			);
@@ -552,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F0B4E2E287E16F80044A644 /* AppDelegate.swift in Sources */,
+				2F9D9AE5287EA56A00CF8B3B /* PostResponse.swift in Sources */,
 				2F9D9AC8287E4CCE00CF8B3B /* JSONUtility.swift in Sources */,
 				2F9D9AD3287E50A500CF8B3B /* UIStoryboard+Storyboards.swift in Sources */,
 				2F9D9AD1287E4FDA00CF8B3B /* UIStoryboard+StoryboardIdentifiable.swift in Sources */,
@@ -570,6 +593,7 @@
 				4DB30CC56EEE8ECD220D0B49 /* PostListViewController.swift in Sources */,
 				875238FB2D7F00FAD9D14917 /* PostListViewInput.swift in Sources */,
 				13A5024D2D216438068DA767 /* PostListViewOutput.swift in Sources */,
+				2F9D9AE3287EA48500CF8B3B /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

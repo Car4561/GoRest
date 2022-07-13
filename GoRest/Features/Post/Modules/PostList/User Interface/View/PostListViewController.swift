@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoRestUI
 
 class PostListViewController: UIViewController {
 
@@ -26,12 +27,20 @@ class PostListViewController: UIViewController {
 
 // MARK: PostViewInput Methods
 
-extension PostListViewController: PostListViewInput {
+extension PostListViewController: PostListViewInput, GRActivityIndicatorPresentable {
 
     func setUpInitialState() {
     }
 
     func moduleInput() -> PostListModuleInput {
         return output as! PostListModuleInput
+    }
+    
+    func showActivityIndicatorView() {
+        showGRActivityIndicatorView()
+    }
+    
+    func hideActivityIndicatorView() {
+        hideGRActivityIndicatorView()
     }
 }
