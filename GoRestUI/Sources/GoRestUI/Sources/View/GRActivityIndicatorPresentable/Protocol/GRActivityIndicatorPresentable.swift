@@ -11,13 +11,13 @@ fileprivate var grActivityIndicatorView: GRActivityIndicatorView!
 
 public protocol GRActivityIndicatorPresentable {
     
-    func showPCActivityIndicatorView()
-    func hidePCActivityIndicatorView()
+    func showGRActivityIndicatorView()
+    func hideGRActivityIndicatorView()
 }
 
 public extension GRActivityIndicatorPresentable where Self: UIViewController {
     
-    func showPCActivityIndicatorView() {
+    func showGRActivityIndicatorView() {
         let keyWindow = UIApplication.shared.connectedScenes
             .filter({$0.activationState == .foregroundActive})
             .compactMap({$0 as? UIWindowScene})
@@ -33,7 +33,7 @@ public extension GRActivityIndicatorPresentable where Self: UIViewController {
         }
     }
     
-    func hidePCActivityIndicatorView() {
+    func hideGRActivityIndicatorView() {
         grActivityIndicatorView?.removeFromSuperview()
     }
 }
