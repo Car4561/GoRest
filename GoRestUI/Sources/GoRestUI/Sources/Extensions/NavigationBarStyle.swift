@@ -18,11 +18,11 @@ public extension NavigationBarStyle where Self: UIViewController {
         let appearance = UINavigationBarAppearance()
         
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = PCColors.tintedNavigationBar
-        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : PCColors.tintedNavigationBarItem]
+        appearance.backgroundColor = GRColors.tintedNavigationBar
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : GRColors.tintedNavigationBarItem]
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
-        navigationController?.navigationBar.tintColor = PCColors.tintedNavigationBarItem
+        navigationController?.navigationBar.tintColor = GRColors.tintedNavigationBarItem
         navigationItem.backButtonTitle = ""
     }
 }

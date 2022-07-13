@@ -16,6 +16,13 @@
 		2F0B4E45287E16F90044A644 /* GoRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E44287E16F90044A644 /* GoRestTests.swift */; };
 		2F0B4E4F287E16F90044A644 /* GoRestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E4E287E16F90044A644 /* GoRestUITests.swift */; };
 		2F0B4E51287E16F90044A644 /* GoRestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E50287E16F90044A644 /* GoRestUITestsLaunchTests.swift */; };
+		2F9D9AC8287E4CCE00CF8B3B /* JSONUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AC7287E4CCE00CF8B3B /* JSONUtility.swift */; };
+		2F9D9ACB287E4CE800CF8B3B /* GoRestNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9D9ACA287E4CE800CF8B3B /* GoRestNetworking */; };
+		2F9D9ACD287E4CEB00CF8B3B /* GoRestUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9D9ACC287E4CEB00CF8B3B /* GoRestUI */; };
+		2F9D9ACF287E4E7500CF8B3B /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9ACE287E4E7500CF8B3B /* StoryboardIdentifiable.swift */; };
+		2F9D9AD1287E4FDA00CF8B3B /* UIStoryboard+StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AD0287E4FDA00CF8B3B /* UIStoryboard+StoryboardIdentifiable.swift */; };
+		2F9D9AD3287E50A500CF8B3B /* UIStoryboard+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AD2287E50A500CF8B3B /* UIStoryboard+Storyboards.swift */; };
+		2F9D9AD8287E50F500CF8B3B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AD7287E50F500CF8B3B /* Routable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,11 @@
 		2F0B4E4A287E16F90044A644 /* GoRestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoRestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0B4E4E287E16F90044A644 /* GoRestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoRestUITests.swift; sourceTree = "<group>"; };
 		2F0B4E50287E16F90044A644 /* GoRestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoRestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F9D9AC7287E4CCE00CF8B3B /* JSONUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtility.swift; sourceTree = "<group>"; };
+		2F9D9ACE287E4E7500CF8B3B /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		2F9D9AD0287E4FDA00CF8B3B /* UIStoryboard+StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+StoryboardIdentifiable.swift"; sourceTree = "<group>"; };
+		2F9D9AD2287E50A500CF8B3B /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
+		2F9D9AD7287E50F500CF8B3B /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9D9ACD287E4CEB00CF8B3B /* GoRestUI in Frameworks */,
+				2F9D9ACB287E4CE800CF8B3B /* GoRestNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +97,7 @@
 				2F0B4E43287E16F90044A644 /* GoRestTests */,
 				2F0B4E4D287E16F90044A644 /* GoRestUITests */,
 				2F0B4E2B287E16F80044A644 /* Products */,
+				2F9D9AC9287E4CE800CF8B3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +114,8 @@
 		2F0B4E2C287E16F80044A644 /* GoRest */ = {
 			isa = PBXGroup;
 			children = (
+				2F9D9AD6287E50E800CF8B3B /* Navigation */,
+				2F9D9AC6287E4CBA00CF8B3B /* Extensions */,
 				2F0B4E2D287E16F80044A644 /* AppDelegate.swift */,
 				2F0B4E2F287E16F80044A644 /* SceneDelegate.swift */,
 				2F0B4E31287E16F80044A644 /* ViewController.swift */,
@@ -127,6 +144,32 @@
 			path = GoRestUITests;
 			sourceTree = "<group>";
 		};
+		2F9D9AC6287E4CBA00CF8B3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F9D9AC7287E4CCE00CF8B3B /* JSONUtility.swift */,
+				2F9D9ACE287E4E7500CF8B3B /* StoryboardIdentifiable.swift */,
+				2F9D9AD0287E4FDA00CF8B3B /* UIStoryboard+StoryboardIdentifiable.swift */,
+				2F9D9AD2287E50A500CF8B3B /* UIStoryboard+Storyboards.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F9D9AC9287E4CE800CF8B3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F9D9AD6287E50E800CF8B3B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2F9D9AD7287E50F500CF8B3B /* Routable.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +186,10 @@
 			dependencies = (
 			);
 			name = GoRest;
+			packageProductDependencies = (
+				2F9D9ACA287E4CE800CF8B3B /* GoRestNetworking */,
+				2F9D9ACC287E4CEB00CF8B3B /* GoRestUI */,
+			);
 			productName = GoRest;
 			productReference = 2F0B4E2A287E16F80044A644 /* GoRest.app */;
 			productType = "com.apple.product-type.application";
@@ -260,7 +307,12 @@
 			files = (
 				2F0B4E32287E16F80044A644 /* ViewController.swift in Sources */,
 				2F0B4E2E287E16F80044A644 /* AppDelegate.swift in Sources */,
+				2F9D9AC8287E4CCE00CF8B3B /* JSONUtility.swift in Sources */,
+				2F9D9AD3287E50A500CF8B3B /* UIStoryboard+Storyboards.swift in Sources */,
+				2F9D9AD1287E4FDA00CF8B3B /* UIStoryboard+StoryboardIdentifiable.swift in Sources */,
 				2F0B4E30287E16F80044A644 /* SceneDelegate.swift in Sources */,
+				2F9D9ACF287E4E7500CF8B3B /* StoryboardIdentifiable.swift in Sources */,
+				2F9D9AD8287E50F500CF8B3B /* Routable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +656,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F9D9ACA287E4CE800CF8B3B /* GoRestNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoRestNetworking;
+		};
+		2F9D9ACC287E4CEB00CF8B3B /* GoRestUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoRestUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F0B4E22287E16F70044A644 /* Project object */;
 }
