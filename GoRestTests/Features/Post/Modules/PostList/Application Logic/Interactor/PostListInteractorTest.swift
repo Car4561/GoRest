@@ -1,5 +1,5 @@
 //
-//  PostRouterTest.swift
+//  PostListInteractorTest.swift
 //  GoRest
 //
 //  Created by Carlos Llerena on 12/07/2022.
@@ -11,7 +11,7 @@ import Quick
 
 @testable import GoRest
 
-final class PostRouterTest: QuickSpec {
+final class PostListInteractorTest: QuickSpec {
 
     override func spec() {
         beforeEach {
@@ -20,12 +20,13 @@ final class PostRouterTest: QuickSpec {
         afterEach {
         }
 
-        describe("A Post Router") {
+        describe("A Post Interactor") {
         }
     }
 
 
     // MARK: Mock Classes
 
-    // Add your mock classes here and make them private. Please remove this comment.
+    private class MockPresenter: PostListInteractorOutput {
+    }
 }

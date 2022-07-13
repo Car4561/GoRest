@@ -1,5 +1,5 @@
 //
-//  PostConfiguratorTest.swift
+//  PostListConfiguratorTest.swift
 //  GoRest
 //
 //  Created by Carlos Llerena on 12/07/2022.
@@ -11,7 +11,7 @@ import Quick
 
 @testable import GoRest
 
-final class PostModuleConfiguratorTest: QuickSpec {
+final class PostListModuleConfiguratorTest: QuickSpec {
 
     override func spec() {
         var viewController: PostViewControllerMock!

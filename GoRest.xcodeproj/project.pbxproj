@@ -37,19 +37,20 @@
 		2FBF60B5287EB12600591DD3 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60B4287EB12600591DD3 /* Host.swift */; };
 		2FBF60B8287EB22400591DD3 /* CommonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60B7287EB22400591DD3 /* CommonString.swift */; };
 		2FBF60BB287EB44000591DD3 /* PostStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60BA287EB44000591DD3 /* PostStrings.swift */; };
+		2FBF60BE287F4B6700591DD3 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 2FBF60BD287F4B6700591DD3 /* Nimble */; };
 		4DB30CC56EEE8ECD220D0B49 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F23E81A827C65C8E19C9D9 /* PostListViewController.swift */; };
 		5507BC041340B35CEE332131 /* PostInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634AF88970D6C52EDD072FF4 /* PostInitializer.swift */; };
 		5CF7FAEF543CC2891023CCBB /* PostListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0B1236011F91DD6460E56 /* PostListInteractorInput.swift */; };
 		5CFB311DDC77DEEEE384A9BE /* PostListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A237DA2EB5933DDF3FB722 /* PostListInteractorOutput.swift */; };
-		7783E616602D840BEE8ADEBB /* PostRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267FF3BBA12B43F520165CD4 /* PostRouterTest.swift */; };
-		7937F91DE53AD894BD757029 /* PostConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB44FD512126F221E0C339B /* PostConfiguratorTest.swift */; };
+		7783E616602D840BEE8ADEBB /* PostListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267FF3BBA12B43F520165CD4 /* PostListRouterTest.swift */; };
+		7937F91DE53AD894BD757029 /* PostListConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB44FD512126F221E0C339B /* PostListConfiguratorTest.swift */; };
 		875238FB2D7F00FAD9D14917 /* PostListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA448980158C291EDBBD26F /* PostListViewInput.swift */; };
 		9617C24A945EEA3DD71DCF04 /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A0D98FAE8F21531C2A1F5 /* PostListPresenter.swift */; };
-		9D21DF61CA0EF30DB648D87A /* PostInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE94FEBBE2A87B4FA577405 /* PostInteractorTest.swift */; };
+		9D21DF61CA0EF30DB648D87A /* PostListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE94FEBBE2A87B4FA577405 /* PostListInteractorTest.swift */; };
 		B02FA44A5C2AA52716C22982 /* PostListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D77322035D0C6282C12B79 /* PostListRouter.swift */; };
 		D664D03AE8A802EF1297CB03 /* PostListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611938C0C2BA74B888672D23 /* PostListModuleInput.swift */; };
-		DD378248C852E3163D2C3E06 /* PostViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B429A01BEC4ED54E7B75C /* PostViewTest.swift */; };
-		E1C53A38C94784902948B538 /* PostPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A4EC881C65AD183F04C77 /* PostPresenterTest.swift */; };
+		DD378248C852E3163D2C3E06 /* PostListViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B429A01BEC4ED54E7B75C /* PostListViewTest.swift */; };
+		E1C53A38C94784902948B538 /* PostListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A4EC881C65AD183F04C77 /* PostListPresenterTest.swift */; };
 		F0CED468A2D056592989CE3C /* PostListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9442F0BAAB80840676E77 /* PostListInteractor.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,11 +72,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CE94FEBBE2A87B4FA577405 /* PostInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostInteractorTest.swift; sourceTree = "<group>"; };
+		1CE94FEBBE2A87B4FA577405 /* PostListInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListInteractorTest.swift; sourceTree = "<group>"; };
 		20B0B1236011F91DD6460E56 /* PostListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListInteractorInput.swift; sourceTree = "<group>"; };
-		267FF3BBA12B43F520165CD4 /* PostRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostRouterTest.swift; sourceTree = "<group>"; };
+		267FF3BBA12B43F520165CD4 /* PostListRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListRouterTest.swift; sourceTree = "<group>"; };
 		2C6A0D98FAE8F21531C2A1F5 /* PostListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
-		2D9A4EC881C65AD183F04C77 /* PostPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostPresenterTest.swift; sourceTree = "<group>"; };
+		2D9A4EC881C65AD183F04C77 /* PostListPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListPresenterTest.swift; sourceTree = "<group>"; };
 		2F0B4E2A287E16F80044A644 /* GoRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0B4E2D287E16F80044A644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F0B4E2F287E16F80044A644 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,8 +105,8 @@
 		2FBF60B4287EB12600591DD3 /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		2FBF60B7287EB22400591DD3 /* CommonString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonString.swift; sourceTree = "<group>"; };
 		2FBF60BA287EB44000591DD3 /* PostStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStrings.swift; sourceTree = "<group>"; };
-		384B429A01BEC4ED54E7B75C /* PostViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostViewTest.swift; sourceTree = "<group>"; };
-		3EB44FD512126F221E0C339B /* PostConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostConfiguratorTest.swift; sourceTree = "<group>"; };
+		384B429A01BEC4ED54E7B75C /* PostListViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListViewTest.swift; sourceTree = "<group>"; };
+		3EB44FD512126F221E0C339B /* PostListConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListConfiguratorTest.swift; sourceTree = "<group>"; };
 		44D77322035D0C6282C12B79 /* PostListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListRouter.swift; sourceTree = "<group>"; };
 		52CB36C9A2A012FA892B7C8B /* PostListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListRouterInput.swift; sourceTree = "<group>"; };
 		611938C0C2BA74B888672D23 /* PostListModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostListModuleInput.swift; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9D9ACD287E4CEB00CF8B3B /* GoRestUI in Frameworks */,
+				2FBF60BE287F4B6700591DD3 /* Nimble in Frameworks */,
 				2F9D9ACB287E4CE800CF8B3B /* GoRestNetworking in Frameworks */,
 				2F9D9ADB287E5B6300CF8B3B /* Lottie in Frameworks */,
 			);
@@ -157,7 +159,7 @@
 		2285BBA717ED54C866657508 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				3EB44FD512126F221E0C339B /* PostConfiguratorTest.swift */,
+				3EB44FD512126F221E0C339B /* PostListConfiguratorTest.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -369,7 +371,7 @@
 		452C9455CC48E688730B1D23 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				267FF3BBA12B43F520165CD4 /* PostRouterTest.swift */,
+				267FF3BBA12B43F520165CD4 /* PostListRouterTest.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -422,7 +424,7 @@
 		90FEE4973D50D1CF800EDABA /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				2D9A4EC881C65AD183F04C77 /* PostPresenterTest.swift */,
+				2D9A4EC881C65AD183F04C77 /* PostListPresenterTest.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -476,7 +478,7 @@
 		D8531B7A495FAAB4646E0126 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				1CE94FEBBE2A87B4FA577405 /* PostInteractorTest.swift */,
+				1CE94FEBBE2A87B4FA577405 /* PostListInteractorTest.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -494,7 +496,7 @@
 		E71BF52638F88C5489FCADDF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				384B429A01BEC4ED54E7B75C /* PostViewTest.swift */,
+				384B429A01BEC4ED54E7B75C /* PostListViewTest.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -545,6 +547,7 @@
 				2F9D9ACA287E4CE800CF8B3B /* GoRestNetworking */,
 				2F9D9ACC287E4CEB00CF8B3B /* GoRestUI */,
 				2F9D9ADA287E5B6300CF8B3B /* Lottie */,
+				2FBF60BD287F4B6700591DD3 /* Nimble */,
 			);
 			productName = GoRest;
 			productReference = 2F0B4E2A287E16F80044A644 /* GoRest.app */;
@@ -620,6 +623,7 @@
 			mainGroup = 2F0B4E21287E16F70044A644;
 			packageReferences = (
 				2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				2FBF60BC287F4B6700591DD3 /* XCRemoteSwiftPackageReference "Nimble" */,
 			);
 			productRefGroup = 2F0B4E2B287E16F80044A644 /* Products */;
 			projectDirPath = "";
@@ -711,11 +715,11 @@
 			files = (
 				2F0B4E51287E16F90044A644 /* GoRestUITestsLaunchTests.swift in Sources */,
 				2F0B4E4F287E16F90044A644 /* GoRestUITests.swift in Sources */,
-				7937F91DE53AD894BD757029 /* PostConfiguratorTest.swift in Sources */,
-				9D21DF61CA0EF30DB648D87A /* PostInteractorTest.swift in Sources */,
-				7783E616602D840BEE8ADEBB /* PostRouterTest.swift in Sources */,
-				E1C53A38C94784902948B538 /* PostPresenterTest.swift in Sources */,
-				DD378248C852E3163D2C3E06 /* PostViewTest.swift in Sources */,
+				7937F91DE53AD894BD757029 /* PostListConfiguratorTest.swift in Sources */,
+				9D21DF61CA0EF30DB648D87A /* PostListInteractorTest.swift in Sources */,
+				7783E616602D840BEE8ADEBB /* PostListRouterTest.swift in Sources */,
+				E1C53A38C94784902948B538 /* PostListPresenterTest.swift in Sources */,
+				DD378248C852E3163D2C3E06 /* PostListViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1042,6 +1046,14 @@
 				version = 3.3.0;
 			};
 		};
+		2FBF60BC287F4B6700591DD3 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.2.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1057,6 +1069,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		2FBF60BD287F4B6700591DD3 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FBF60BC287F4B6700591DD3 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
