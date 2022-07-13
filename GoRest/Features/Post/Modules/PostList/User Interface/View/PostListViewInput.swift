@@ -11,6 +11,7 @@ protocol PostListViewInput: AnyObject {
     func setUpInitialState()
     func moduleInput() -> PostListModuleInput
     func setPostList(_ postList: [Post])
+    func appendToPostList(_ postList: [Post])
     func showActivityIndicatorView()
     func hideActivityIndicatorView()
 }

@@ -7,5 +7,5 @@
 //
 
 protocol PostListInteractorInput {
-    func getPostList()
+    func getPostList(page: Int)
 }

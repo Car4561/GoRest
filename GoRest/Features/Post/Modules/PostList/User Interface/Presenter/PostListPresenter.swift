@@ -11,6 +11,8 @@ class PostListPresenter {
     weak var view: PostListViewInput!
     var interactor: PostListInteractorInput!
     var router: PostListRouterInput!
+    
+    var currentPage = 0
 }
 
 
@@ -29,7 +31,13 @@ extension PostListPresenter: PostListViewOutput {
 
     func viewIsReady() {
         view.showActivityIndicatorView()
-        interactor.getPostList()
+        interactor.getPostList(page: 1)
+    }
+    
+    func retrieveNewPage() {
+        let nextPage = currentPage + 1
+        
+        interactor.getPostList(page: nextPage)
     }
 }
 
@@ -40,7 +48,13 @@ extension PostListPresenter: PostListInteractorOutput {
     
     func didFetchPostList(_ postList: [Post]) {
         view.hideActivityIndicatorView()
-        view.setPostList(postList)
+        currentPage += 1
+
+        if currentPage == 1 {
+            view.setPostList(postList)
+        } else {
+            view.appendToPostList(postList)
+        }
     }
     
     func didFailFetchingPostList(title: String, message: String) {

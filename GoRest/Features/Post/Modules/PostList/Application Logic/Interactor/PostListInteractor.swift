@@ -16,9 +16,9 @@ class PostListInteractor: PostListInteractorInput {
     lazy var postClient: PostClientProvider = PostClient(configuration: NetworkingService().configuration)
     var cancellables: Set<AnyCancellable> = []
     
-    func getPostList() {
-        let querys = [URLQueryItem(name: PostStrings.queryPage, value: "4")]
-        postClient.postList(querys: [])
+    func getPostList(page: Int) {
+        let querys = [URLQueryItem(name: PostStrings.queryPage, value: String(page))]
+        postClient.postList(querys: querys)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {

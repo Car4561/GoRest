@@ -9,4 +9,5 @@ enum PostStrings {
     
     static let title = "GoRest"
     static let queryPage = "page"
+    static let search = "Buscar posts"
 }

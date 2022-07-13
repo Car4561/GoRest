@@ -9,4 +9,5 @@
 protocol PostListViewOutput {
 
     func viewIsReady()
+    func retrieveNewPage()
 }
