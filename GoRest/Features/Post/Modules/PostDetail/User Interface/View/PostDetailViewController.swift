@@ -25,6 +25,7 @@ class PostDetailViewController: UIViewController {
             bodyLabel.textAlignment = .justified
         }
     }
+    
     // MARK: Life cycle
 
     override func viewDidLoad() {
@@ -33,6 +34,10 @@ class PostDetailViewController: UIViewController {
 	    // TODO: View set up code goes here. Please remove this comment.
 
         output.viewIsReady()
+    }
+
+    deinit {
+        print("deinit PostDetailViewController")
     }
 }
 

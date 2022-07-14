@@ -7,11 +7,11 @@
 
 import UIKit
 
-public struct GRColors {
+public enum GRColors {
     
     // MARK: - NAME
     
-    struct Name {
+    enum Name {
         
         static let buttonPrimary = "buttonPrimary"
         static let buttonSecondary = "buttonSecondary"

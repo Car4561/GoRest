@@ -7,4 +7,8 @@
 //
 
 class PostDetailRouter: PostDetailRouterInput {
+    
+    deinit {
+        print("deinit PostDetailRouter")
+    }
 }

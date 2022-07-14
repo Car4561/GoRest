@@ -61,7 +61,7 @@ extension PostListPresenter: PostListInteractorOutput {
         }
     }
     
-    func didFailFetchingPostList(title: String, message: String) {
+    func didFailFetchingPostList() {
         view.hideActivityIndicatorView()
     }
 }

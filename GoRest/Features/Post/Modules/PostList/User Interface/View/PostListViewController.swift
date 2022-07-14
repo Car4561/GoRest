@@ -10,7 +10,7 @@ import UIKit
 import GoRestUI
 
 class PostListViewController: UIViewController {
-    
+
     // MARK: Properties
     var output: PostListViewOutput!
     
@@ -25,7 +25,7 @@ class PostListViewController: UIViewController {
             postsTableView.reloadData()
         }
     }
-    
+
     @IBOutlet weak var postsTableView: UITableView! {
         didSet {
             postsTableView.delegate = self
@@ -35,7 +35,7 @@ class PostListViewController: UIViewController {
             postsTableView.register(PostTableViewCell.self)
         }
     }
-    
+
     lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.placeholder = PostStrings.search
@@ -47,6 +47,7 @@ class PostListViewController: UIViewController {
         searchController.automaticallyShowsCancelButton = true
         return searchController
     }()
+    
     // MARK: Life cycle
     
     override func viewDidLoad() {

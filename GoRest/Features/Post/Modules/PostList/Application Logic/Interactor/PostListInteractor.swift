@@ -24,12 +24,12 @@ class PostListInteractor: PostListInteractorInput {
                 switch completion {
                 case .failure(let networkingError):
                     switch networkingError {
-                    case .notConnectionInternet(let error):
-                        self?.output.didFailFetchingPostList(title: CommonStrings.alertTitleGenericError, message: CommonStrings.alertMessageInternetError)
+                    case .notConnectionInternet(_):
+                        self?.output.didFailFetchingPostList()
                     case .unexpectedError(_):
-                        self?.output.didFailFetchingPostList(title: CommonStrings.alertTitleGenericError, message: CommonStrings.alertMessageGenericError)
+                        self?.output.didFailFetchingPostList()
                     default:
-                        self?.output.didFailFetchingPostList(title: CommonStrings.alertTitleGenericError, message: CommonStrings.alertMessageGenericError)
+                        self?.output.didFailFetchingPostList()
                     }
                 default:
                     break

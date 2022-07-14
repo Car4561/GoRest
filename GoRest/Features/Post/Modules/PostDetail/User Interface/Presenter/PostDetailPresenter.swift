@@ -14,6 +14,10 @@ class PostDetailPresenter {
     
     var title: String!
     var body: String!
+    
+    deinit {
+        print("deinit PostDetailPresenter")
+    }
 }
 
 

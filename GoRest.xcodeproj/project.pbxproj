@@ -185,7 +185,6 @@
 			children = (
 				3B89664C32FD0BF80806B93C /* PostDetailConfiguratorTest.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -195,7 +194,6 @@
 				43596C0BF17BBF738679CC9E /* Application Logic */,
 				CB86C7A6495F0CE5B8E47AAF /* User Interface */,
 			);
-			name = PostDetail;
 			path = PostDetail;
 			sourceTree = "<group>";
 		};
@@ -204,7 +202,6 @@
 			children = (
 				D58D85BE23ACE9B53D0F8537 /* PostDetailViewTest.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -222,7 +219,6 @@
 				89E510E37EAAC3C858B1051F /* PostDetailConfigurator.swift */,
 				572D0C0B448ECEC49445B648 /* PostDetailInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -248,7 +244,6 @@
 			children = (
 				8C95A0A98663AAB94B7FD129 /* PostDetailRouterTest.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -258,7 +253,6 @@
 				03E9B5C4D03F84714B02E501 /* Configurator */,
 				CE66DB7678870EF6A311FCAC /* Interactor */,
 			);
-			name = "Application Logic";
 			path = "Application Logic";
 			sourceTree = "<group>";
 		};
@@ -453,7 +447,6 @@
 				8B91D3C4156BA116D19C6921 /* PostDetailModuleInput.swift */,
 				F1DF309CF3BCE352E3CD79C1 /* PostDetailPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -463,7 +456,6 @@
 				70D03722F7560B9D68B18DB0 /* PostDetailRouter.swift */,
 				FACF0743003C0A33C63F4FE7 /* PostDetailRouterInput.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -484,7 +476,6 @@
 				9224C7FB82C043E02D691AD0 /* Presenter */,
 				1EF1C83A9F3754D9609CDA4D /* View */,
 			);
-			name = "User Interface";
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
@@ -494,7 +485,6 @@
 				21968AF5F90D7F59D81821CD /* Configurator */,
 				D7ADC384465238AE7A3013EC /* Interactor */,
 			);
-			name = "Application Logic";
 			path = "Application Logic";
 			sourceTree = "<group>";
 		};
@@ -533,7 +523,6 @@
 				3F08EF3B9C797EF008852335 /* PostDetailViewInput.swift */,
 				66D87D46034FF316134A9BCF /* PostDetailViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -561,7 +550,6 @@
 				2D579BEEF7366FD53E8280C6 /* Application Logic */,
 				3E106941C462C4A6AEE82737 /* User Interface */,
 			);
-			name = PostDetail;
 			path = PostDetail;
 			sourceTree = "<group>";
 		};
@@ -587,7 +575,6 @@
 			children = (
 				7980B7E146A1FA32B2DDB92A /* PostDetailPresenterTest.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -635,7 +622,6 @@
 				3BEB3A71E90F8E7FFE52474D /* Router */,
 				8332743D194984BC03392902 /* View */,
 			);
-			name = "User Interface";
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
@@ -644,7 +630,6 @@
 			children = (
 				DF964A94C6BF90578C0AB0CB /* PostDetailInteractorTest.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -655,7 +640,6 @@
 				AE3848EBAC46F4E99B2B1029 /* PostDetailInteractorInput.swift */,
 				8A469115D69D2AB763B321C3 /* PostDetailInteractorOutput.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -814,7 +798,7 @@
 			);
 			mainGroup = 2F0B4E21287E16F70044A644;
 			packageReferences = (
-				2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios.git" */,
+				2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 2F0B4E2B287E16F80044A644 /* Products */;
 			projectDirPath = "";
@@ -1246,7 +1230,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios.git" */ = {
+		2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -1267,7 +1251,7 @@
 		};
 		2F9D9ADA287E5B6300CF8B3B /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios.git" */;
+			package = 2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -6,9 +6,11 @@
 //  Copyright © 2022 NTT DATA Europe & Latam. All rights reserved.
 //
 
+import UIKit
+
 class PostDetailModuleConfigurator {
 
-    func configureModuleForViewInput<UIViewController>(_ viewInput: UIViewController) {
+    func configureModuleForViewInput(_ viewInput: UIViewController) {
 
         if let viewController = viewInput as? PostDetailViewController {
             configure(viewController: viewController)

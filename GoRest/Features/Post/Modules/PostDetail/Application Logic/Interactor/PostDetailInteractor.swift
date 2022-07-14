@@ -9,4 +9,8 @@
 class PostDetailInteractor: PostDetailInteractorInput {
 
     weak var output: PostDetailInteractorOutput!
+    
+    deinit {
+        print("deinit PostDetailInteractor")
+    }
 }
