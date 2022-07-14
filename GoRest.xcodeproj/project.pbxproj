@@ -16,9 +16,18 @@
 		2F0B4E30287E16F80044A644 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E2F287E16F80044A644 /* SceneDelegate.swift */; };
 		2F0B4E37287E16F90044A644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B4E36287E16F90044A644 /* Assets.xcassets */; };
 		2F0B4E3A287E16F90044A644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B4E38287E16F90044A644 /* LaunchScreen.storyboard */; };
-		2F0B4E45287E16F90044A644 /* GoRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E44287E16F90044A644 /* GoRestTests.swift */; };
-		2F0B4E4F287E16F90044A644 /* GoRestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E4E287E16F90044A644 /* GoRestUITests.swift */; };
-		2F0B4E51287E16F90044A644 /* GoRestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E50287E16F90044A644 /* GoRestUITestsLaunchTests.swift */; };
+		2F121F0D28800688004816A2 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 2F121F0C28800688004816A2 /* Quick */; };
+		2F121F0F2880068A004816A2 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 2F121F0E2880068A004816A2 /* Nimble */; };
+		2F121F10288008EE004816A2 /* PostListConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB44FD512126F221E0C339B /* PostListConfiguratorTest.swift */; };
+		2F121F11288008FB004816A2 /* PostListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE94FEBBE2A87B4FA577405 /* PostListInteractorTest.swift */; };
+		2F121F1228800901004816A2 /* PostListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267FF3BBA12B43F520165CD4 /* PostListRouterTest.swift */; };
+		2F121F1328800907004816A2 /* PostListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A4EC881C65AD183F04C77 /* PostListPresenterTest.swift */; };
+		2F121F1428800910004816A2 /* PostListViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B429A01BEC4ED54E7B75C /* PostListViewTest.swift */; };
+		2F121F1528800917004816A2 /* PostDetailConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B89664C32FD0BF80806B93C /* PostDetailConfiguratorTest.swift */; };
+		2F121F162880091C004816A2 /* PostDetailInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF964A94C6BF90578C0AB0CB /* PostDetailInteractorTest.swift */; };
+		2F121F1728800920004816A2 /* PostDetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980B7E146A1FA32B2DDB92A /* PostDetailPresenterTest.swift */; };
+		2F121F1828800925004816A2 /* PostDetailRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95A0A98663AAB94B7FD129 /* PostDetailRouterTest.swift */; };
+		2F121F1928800928004816A2 /* PostDetailViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D85BE23ACE9B53D0F8537 /* PostDetailViewTest.swift */; };
 		2F9D9AC8287E4CCE00CF8B3B /* JSONUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D9AC7287E4CCE00CF8B3B /* JSONUtility.swift */; };
 		2F9D9ACB287E4CE800CF8B3B /* GoRestNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9D9ACA287E4CE800CF8B3B /* GoRestNetworking */; };
 		2F9D9ACD287E4CEB00CF8B3B /* GoRestUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9D9ACC287E4CEB00CF8B3B /* GoRestUI */; };
@@ -39,8 +48,6 @@
 		2FBF60B5287EB12600591DD3 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60B4287EB12600591DD3 /* Host.swift */; };
 		2FBF60B8287EB22400591DD3 /* CommonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60B7287EB22400591DD3 /* CommonString.swift */; };
 		2FBF60BB287EB44000591DD3 /* PostStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF60BA287EB44000591DD3 /* PostStrings.swift */; };
-		3ABF38D1C66E89FA72839522 /* PostDetailInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF964A94C6BF90578C0AB0CB /* PostDetailInteractorTest.swift */; };
-		3E1EE2EA39E565974EEC5619 /* PostDetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980B7E146A1FA32B2DDB92A /* PostDetailPresenterTest.swift */; };
 		4DB30CC56EEE8ECD220D0B49 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F23E81A827C65C8E19C9D9 /* PostListViewController.swift */; };
 		522047C7DC17CB080221898C /* PostDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A469115D69D2AB763B321C3 /* PostDetailInteractorOutput.swift */; };
 		545E3803B871FB9E69336E7D /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD604758FB95BF07BD6A2032 /* PostDetailViewController.swift */; };
@@ -48,37 +55,22 @@
 		5CF7FAEF543CC2891023CCBB /* PostListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0B1236011F91DD6460E56 /* PostListInteractorInput.swift */; };
 		5CFB311DDC77DEEEE384A9BE /* PostListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A237DA2EB5933DDF3FB722 /* PostListInteractorOutput.swift */; };
 		6BF85B6987DA226708A44EFA /* PostDetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D87D46034FF316134A9BCF /* PostDetailViewOutput.swift */; };
-		6EDCC05CEB64BE12D7297A2E /* PostDetailConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B89664C32FD0BF80806B93C /* PostDetailConfiguratorTest.swift */; };
 		7724178E0943FC040651FE50 /* PostDetailInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D0C0B448ECEC49445B648 /* PostDetailInitializer.swift */; };
-		7783E616602D840BEE8ADEBB /* PostListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267FF3BBA12B43F520165CD4 /* PostListRouterTest.swift */; };
 		780E97CE2FAFABE8B4EF5B5A /* PostDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D03722F7560B9D68B18DB0 /* PostDetailRouter.swift */; };
-		7937F91DE53AD894BD757029 /* PostListConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB44FD512126F221E0C339B /* PostListConfiguratorTest.swift */; };
 		875238FB2D7F00FAD9D14917 /* PostListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA448980158C291EDBBD26F /* PostListViewInput.swift */; };
 		9354F2F824C8887821368810 /* PostDetailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3848EBAC46F4E99B2B1029 /* PostDetailInteractorInput.swift */; };
 		9617C24A945EEA3DD71DCF04 /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A0D98FAE8F21531C2A1F5 /* PostListPresenter.swift */; };
 		9ADF86068F6368E78D6993B8 /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF309CF3BCE352E3CD79C1 /* PostDetailPresenter.swift */; };
-		9D21DF61CA0EF30DB648D87A /* PostListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE94FEBBE2A87B4FA577405 /* PostListInteractorTest.swift */; };
-		A9716FE0593AAA556C13A45F /* PostDetailViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D85BE23ACE9B53D0F8537 /* PostDetailViewTest.swift */; };
 		B02FA44A5C2AA52716C22982 /* PostListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D77322035D0C6282C12B79 /* PostListRouter.swift */; };
 		B452E64A37B95E39331181B7 /* PostDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E510E37EAAC3C858B1051F /* PostDetailConfigurator.swift */; };
 		C5242DC46C95F93F29FE67B5 /* PostDetailRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0743003C0A33C63F4FE7 /* PostDetailRouterInput.swift */; };
-		D602F73354ABE8694A5F8B08 /* PostDetailRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95A0A98663AAB94B7FD129 /* PostDetailRouterTest.swift */; };
 		D664D03AE8A802EF1297CB03 /* PostListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611938C0C2BA74B888672D23 /* PostListModuleInput.swift */; };
-		DD378248C852E3163D2C3E06 /* PostListViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B429A01BEC4ED54E7B75C /* PostListViewTest.swift */; };
 		E0A43048C38221A7A0054A75 /* PostDetailModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91D3C4156BA116D19C6921 /* PostDetailModuleInput.swift */; };
-		E1C53A38C94784902948B538 /* PostListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A4EC881C65AD183F04C77 /* PostListPresenterTest.swift */; };
 		F0CED468A2D056592989CE3C /* PostListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9442F0BAAB80840676E77 /* PostListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2F0B4E41287E16F90044A644 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F0B4E22287E16F70044A644 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F0B4E29287E16F80044A644;
-			remoteInfo = GoRest;
-		};
-		2F0B4E4B287E16F90044A644 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2F0B4E22287E16F70044A644 /* Project object */;
 			proxyType = 1;
@@ -101,8 +93,6 @@
 		2F0B4E39287E16F90044A644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F0B4E3B287E16F90044A644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F0B4E40287E16F90044A644 /* GoRestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoRestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0B4E44287E16F90044A644 /* GoRestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoRestTests.swift; sourceTree = "<group>"; };
-		2F0B4E4A287E16F90044A644 /* GoRestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoRestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0B4E4E287E16F90044A644 /* GoRestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoRestUITests.swift; sourceTree = "<group>"; };
 		2F0B4E50287E16F90044A644 /* GoRestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoRestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F9D9AC7287E4CCE00CF8B3B /* JSONUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtility.swift; sourceTree = "<group>"; };
@@ -167,13 +157,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F0B4E47287E16F90044A644 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2F121F0D28800688004816A2 /* Quick in Frameworks */,
+				2F121F0F2880068A004816A2 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +257,6 @@
 			children = (
 				2F0B4E2A287E16F80044A644 /* GoRest.app */,
 				2F0B4E40287E16F90044A644 /* GoRestTests.xctest */,
-				2F0B4E4A287E16F90044A644 /* GoRestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,7 +278,6 @@
 		2F0B4E43287E16F90044A644 /* GoRestTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F0B4E44287E16F90044A644 /* GoRestTests.swift */,
 				C1C444FE91CE2E8204C8FCD0 /* Features */,
 			);
 			path = GoRestTests;
@@ -714,6 +697,8 @@
 				2F0B4E26287E16F80044A644 /* Sources */,
 				2F0B4E27287E16F80044A644 /* Frameworks */,
 				2F0B4E28287E16F80044A644 /* Resources */,
+				2FEC2697287FCE2200F09514 /* Run Script */,
+				2FEC2698287FCE3200F09514 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -743,27 +728,13 @@
 				2F0B4E42287E16F90044A644 /* PBXTargetDependency */,
 			);
 			name = GoRestTests;
+			packageProductDependencies = (
+				2F121F0C28800688004816A2 /* Quick */,
+				2F121F0E2880068A004816A2 /* Nimble */,
+			);
 			productName = GoRestTests;
 			productReference = 2F0B4E40287E16F90044A644 /* GoRestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2F0B4E49287E16F90044A644 /* GoRestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F0B4E5A287E16FA0044A644 /* Build configuration list for PBXNativeTarget "GoRestUITests" */;
-			buildPhases = (
-				2F0B4E46287E16F90044A644 /* Sources */,
-				2F0B4E47287E16F90044A644 /* Frameworks */,
-				2F0B4E48287E16F90044A644 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F0B4E4C287E16F90044A644 /* PBXTargetDependency */,
-			);
-			name = GoRestUITests;
-			productName = GoRestUITests;
-			productReference = 2F0B4E4A287E16F90044A644 /* GoRestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -782,10 +753,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 2F0B4E29287E16F80044A644;
 					};
-					2F0B4E49287E16F90044A644 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 2F0B4E29287E16F80044A644;
-					};
 				};
 			};
 			buildConfigurationList = 2F0B4E25287E16F80044A644 /* Build configuration list for PBXProject "GoRest" */;
@@ -799,6 +766,8 @@
 			mainGroup = 2F0B4E21287E16F70044A644;
 			packageReferences = (
 				2F9D9AD9287E5B6300CF8B3B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				2FEC2691287FCD5600F09514 /* XCRemoteSwiftPackageReference "Nimble" */,
+				2FEC2694287FCD7D00F09514 /* XCRemoteSwiftPackageReference "Quick" */,
 			);
 			productRefGroup = 2F0B4E2B287E16F80044A644 /* Products */;
 			projectDirPath = "";
@@ -806,7 +775,6 @@
 			targets = (
 				2F0B4E29287E16F80044A644 /* GoRest */,
 				2F0B4E3F287E16F90044A644 /* GoRestTests */,
-				2F0B4E49287E16F90044A644 /* GoRestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -830,14 +798,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F0B4E48287E16F90044A644 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FEC2697287FCE2200F09514 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\n# remove simulator's archs if location is not simulator's directory\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\necho \"No need to remove archs\"\n;;\n*)\nif $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\nlipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\necho \"i386 architecture removed\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\nif $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\nlipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\necho \"x86_64 architecture removed\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\n;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
 		};
-/* End PBXResourcesBuildPhase section */
+		2FEC2698287FCE3200F09514 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find \"${CODESIGNING_FOLDER_PATH}\" -name '*.framework' -print0 | while read -d $'\\0' framework \ndo \n    codesign --force --deep --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --preserve-metadata=identifier,entitlements --timestamp=none \"${framework}\" \ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F0B4E26287E16F80044A644 /* Sources */ = {
@@ -892,26 +891,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0B4E45287E16F90044A644 /* GoRestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F0B4E46287E16F90044A644 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F0B4E51287E16F90044A644 /* GoRestUITestsLaunchTests.swift in Sources */,
-				2F0B4E4F287E16F90044A644 /* GoRestUITests.swift in Sources */,
-				7937F91DE53AD894BD757029 /* PostListConfiguratorTest.swift in Sources */,
-				9D21DF61CA0EF30DB648D87A /* PostListInteractorTest.swift in Sources */,
-				7783E616602D840BEE8ADEBB /* PostListRouterTest.swift in Sources */,
-				E1C53A38C94784902948B538 /* PostListPresenterTest.swift in Sources */,
-				DD378248C852E3163D2C3E06 /* PostListViewTest.swift in Sources */,
-				6EDCC05CEB64BE12D7297A2E /* PostDetailConfiguratorTest.swift in Sources */,
-				3ABF38D1C66E89FA72839522 /* PostDetailInteractorTest.swift in Sources */,
-				D602F73354ABE8694A5F8B08 /* PostDetailRouterTest.swift in Sources */,
-				3E1EE2EA39E565974EEC5619 /* PostDetailPresenterTest.swift in Sources */,
-				A9716FE0593AAA556C13A45F /* PostDetailViewTest.swift in Sources */,
+				2F121F1928800928004816A2 /* PostDetailViewTest.swift in Sources */,
+				2F121F1828800925004816A2 /* PostDetailRouterTest.swift in Sources */,
+				2F121F1728800920004816A2 /* PostDetailPresenterTest.swift in Sources */,
+				2F121F162880091C004816A2 /* PostDetailInteractorTest.swift in Sources */,
+				2F121F1528800917004816A2 /* PostDetailConfiguratorTest.swift in Sources */,
+				2F121F1428800910004816A2 /* PostListViewTest.swift in Sources */,
+				2F121F1328800907004816A2 /* PostListPresenterTest.swift in Sources */,
+				2F121F1228800901004816A2 /* PostListRouterTest.swift in Sources */,
+				2F121F11288008FB004816A2 /* PostListInteractorTest.swift in Sources */,
+				2F121F10288008EE004816A2 /* PostListConfiguratorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -922,11 +911,6 @@
 			isa = PBXTargetDependency;
 			target = 2F0B4E29287E16F80044A644 /* GoRest */;
 			targetProxy = 2F0B4E41287E16F90044A644 /* PBXContainerItemProxy */;
-		};
-		2F0B4E4C287E16F90044A644 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F0B4E29287E16F80044A644 /* GoRest */;
-			targetProxy = 2F0B4E4B287E16F90044A644 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1152,42 +1136,6 @@
 			};
 			name = Release;
 		};
-		2F0B4E5B287E16FA0044A644 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NR5747Y6M3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pe.carlosllerena.GoRestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GoRest;
-			};
-			name = Debug;
-		};
-		2F0B4E5C287E16FA0044A644 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NR5747Y6M3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pe.carlosllerena.GoRestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GoRest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1218,15 +1166,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F0B4E5A287E16FA0044A644 /* Build configuration list for PBXNativeTarget "GoRestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F0B4E5B287E16FA0044A644 /* Debug */,
-				2F0B4E5C287E16FA0044A644 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1238,9 +1177,35 @@
 				version = 3.3.0;
 			};
 		};
+		2FEC2691287FCD5600F09514 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.2.1;
+			};
+		};
+		2FEC2694287FCD7D00F09514 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2F121F0C28800688004816A2 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FEC2694287FCD7D00F09514 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		2F121F0E2880068A004816A2 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FEC2691287FCD5600F09514 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
 		2F9D9ACA287E4CE800CF8B3B /* GoRestNetworking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GoRestNetworking;
