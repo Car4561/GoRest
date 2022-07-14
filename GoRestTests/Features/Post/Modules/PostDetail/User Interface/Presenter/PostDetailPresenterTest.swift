@@ -42,5 +42,9 @@ final class PostDetailPresenterTest: QuickSpec {
 
             return PostDetailPresenter()
 	    }
+        
+        func setPost(title: String, body: String) {
+            
+        }
     }
 }

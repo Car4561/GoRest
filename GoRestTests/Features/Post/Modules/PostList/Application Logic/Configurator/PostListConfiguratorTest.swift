@@ -20,7 +20,7 @@ final class PostListModuleConfiguratorTest: QuickSpec {
         beforeEach {
             viewController = PostViewControllerMock()
 
-            configurator = PostModuleConfigurator()
+            configurator = PostListModuleConfigurator()
             configurator.configureModuleForViewInput(viewController)
         }
 
@@ -32,28 +32,28 @@ final class PostListModuleConfiguratorTest: QuickSpec {
         describe("A PostModuleConfigurator") {
             it("should configure the viewController") {
                 expect(viewController.output).toNot(beNil())
-                expect(viewController.output).to(beAKindOf(PostPresenter.self))
+                expect(viewController.output).to(beAKindOf(PostListPresenter.self))
             }
 
             it("should configure the presenter") {
-                let presenter = viewController.output as? PostPresenter
+                let presenter = viewController.output as? PostListPresenter
 
                 expect(presenter?.view).toNot(beNil())
-                expect(presenter?.view).to(beAKindOf(PostViewController.self))
+                expect(presenter?.view).to(beAKindOf(PostListViewController.self))
 
                 expect(presenter?.router).toNot(beNil())
-                expect(presenter?.router).to(beAKindOf(PostRouter.self))
+                expect(presenter?.router).to(beAKindOf(PostListRouter.self))
 
                 expect(presenter?.interactor).toNot(beNil())
-                expect(presenter?.interactor).to(beAKindOf(PostInteractor.self))
+                expect(presenter?.interactor).to(beAKindOf(PostListInteractor.self))
             }
 
             it("should configure the interactor") {
-                let presenter = viewController.output as? PostPresenter
-                let interactor = presenter?.interactor as? PostInteractor
+                let presenter = viewController.output as? PostListPresenter
+                let interactor = presenter?.interactor as? PostListInteractor
 
                 expect(interactor?.output).toNot(beNil())
-                expect(interactor?.output).to(beAKindOf(PostPresenter.self))
+                expect(interactor?.output).to(beAKindOf(PostListPresenter.self))
             }
         }
     }

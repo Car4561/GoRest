@@ -28,5 +28,12 @@ final class PostListInteractorTest: QuickSpec {
     // MARK: Mock Classes
 
     private class MockPresenter: PostListInteractorOutput {
+        func didFetchPostList(_ postList: [Post]) {
+            
+        }
+        
+        func didFailFetchingPostList() {
+            
+        }
     }
 }
