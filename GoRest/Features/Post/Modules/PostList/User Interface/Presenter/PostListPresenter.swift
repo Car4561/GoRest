@@ -12,6 +12,7 @@ class PostListPresenter {
     var interactor: PostListInteractorInput!
     var router: PostListRouterInput!
     
+    var postList: [Post] = []
     var currentPage = 0
 }
 
@@ -40,6 +41,13 @@ extension PostListPresenter: PostListViewOutput {
         interactor.getPostList(page: nextPage)
     }
     
+    func didSearchBarText(searchText: String) {
+        let filteredPostList = searchText.isEmpty ? postList : postList.filter { post in
+            return post.title.lowercased().contains(searchText)
+        }
+        view.setPostList(filteredPostList)
+    }
+    
     func didTapPost(post: Post) {
         router.routeToPostDetail(title: post.title, body: post.body)
     }
@@ -53,10 +61,11 @@ extension PostListPresenter: PostListInteractorOutput {
     func didFetchPostList(_ postList: [Post]) {
         view.hideActivityIndicatorView()
         currentPage += 1
-
         if currentPage == 1 {
+            self.postList = postList
             view.setPostList(postList)
         } else {
+            self.postList.append(contentsOf: postList)
             view.appendToPostList(postList)
         }
     }

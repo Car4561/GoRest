@@ -10,5 +10,6 @@ protocol PostListViewOutput {
 
     func viewIsReady()
     func didTapPost(post: Post)
+    func didSearchBarText(searchText: String)
     func retrieveNewPage()
 }

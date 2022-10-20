@@ -17,10 +17,8 @@ class PostListViewController: UIViewController {
     let pageSize = 10
     let scrollingThreshold = 3
     var currentPage = 0
-    
-    var postList: [Post] = []
-    
-    var filteredPostList: [Post] = [] {
+
+    var postList: [Post] = [] {
         didSet {
             postsTableView.reloadData()
         }
@@ -62,12 +60,6 @@ class PostListViewController: UIViewController {
         title = PostStrings.title
         navigationItem.searchController = searchController
     }
-    
-    func filterContent(searchText: String){
-        filteredPostList = searchText.isEmpty ? postList : postList.filter { post in
-            return post.title.lowercased().contains(searchText)
-        }
-    }
 }
 
 // MARK: TableView Delegate & Data source
@@ -75,18 +67,18 @@ class PostListViewController: UIViewController {
 extension PostListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        filteredPostList.count
+        postList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as PostTableViewCell
-        let post = filteredPostList[indexPath.row]
+        let post = postList[indexPath.row]
         cell.configure(with: post)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let post = filteredPostList[indexPath.row]
+        let post = postList[indexPath.row]
         output.didTapPost(post: post)
     }
     
@@ -101,7 +93,7 @@ extension PostListViewController: UISearchResultsUpdating{
 
     func updateSearchResults(for searchController: UISearchController) {
         guard let searchText = searchController.searchBar.text else { return }
-        filterContent(searchText: searchText.lowercased())
+        output.didSearchBarText(searchText: searchText.lowercased())
     }
 }
 
@@ -119,13 +111,11 @@ extension PostListViewController: PostListViewInput, GRActivityIndicatorPresenta
     func setPostList(_ postList: [Post]) {
         currentPage = 1
         self.postList = postList
-        self.filteredPostList = self.postList
     }
     
     func appendToPostList(_ postList: [Post]) {
         currentPage += 1
         self.postList.append(contentsOf: postList)
-        self.filteredPostList = self.postList
     }
     
     func showActivityIndicatorView() {
